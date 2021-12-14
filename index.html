@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   
   <link rel="shortcut icon" type="image/x-icon" href="https://right3667.github.io/L.png">
+  <link rel="stylesheet" href="css/animatedLogin.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,17 +18,40 @@
   <meta property="og:description" content="LEO's portfolio"/>
   <meta property="og:image" content="https://right3667.github.io/assets/img/avatar.jpg"/>
   
-  
-  <link rel="stylesheet" href="https://right3667.github.io/assets/css/main.css"/>
-  <h2>이 부분은 외부 스타일 시트만이 적용됩니다.</h2>
 </head>
 <body>
     <p>LEO test page v1.8</p>
-  이 영역은 본문영역 입니다.<br>
-  지금부터 HTML을 공부합니다.<br>
-  <font color="red" size='6' >HTML</font>은 웹상에서 사용하는 <br>
-  문서를 작성하는 도구입니다.<br>
-  이것은 태그로 구성되어 있습니다.<br>
+<form action="animatedLogin.html" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+            Don't have account? <a href="#">Sign up</a>
+        </div>
+
+    </form>
+
+    <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+            if($(this).val() == "")
+            $(this).removeClass("focus");
+        })
+    </script>
   
 </body>
 </html>
