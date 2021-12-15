@@ -1,21 +1,74 @@
-	html{overflow: hidden;}
+*{margin:0px; padding:0px;}
+html{overflow: hidden;}
  
-html, body{width: 100%; height: 100%;}
+
+ html, body{width: 100%; height: 100%;}
  
 .content{
+	
+	position: fixed;
+	z-index: -5;
+	transition: all 0.4s ease-in-out;
 	width: 100%; height: 100%;
-	background-color: blueviolet;
+	background-attachment:fixed;
 	
 	position: relative;
 }
-.content > h1{
+
+#content_1{
+	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
+	background-attachment:fixed;
+}
+
+#content_2{
+	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
+	background-attachment:fixed;
+}
+
+#content_3{
+	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
+	background-attachment:fixed;
+}
+
+#content_4{
+	background: linear-gradient(to right bottom, #447ed6, #6a7ad9, #8b73d8, #aa6cd3, #c562c9);
+	background-attachment:fixed;
+}
+
+#content_5{
+	background: linear-gradient(to right bottom, #447ed6, #6a7ad9, #8b73d8, #aa6cd3, #c562c9);
+	background-attachment:fixed;
+}
+
+#content_6{
+	background: linear-gradient(to right bottom, #447ed6, #6a7ad9, #8b73d8, #aa6cd3, #c562c9);
+	background-attachment:fixed;
+}
+
+#content_7{
+	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
+	background-attachment:fixed;
+}
+
+
+
+
+#content_1 > h1{
 	position: absolute;
 	top: 50%; left: 50%;
 	transform: translate(-50%,-50%);
- 
-	font-size: 20em;
+	font-size: 5em;
 	font-weight: bold;
 	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
- 
+	
 }
-.content:nth-child(even){background-color: #333;}
+
+#content_7 > h2{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+	
+}
