@@ -21,7 +21,7 @@
 </head>
 <body>
     <p>LEO test page v1.9</p>
-<form action="animatedLogin.html" class="login-form">
+    <!--<form action="animatedLogin.html" class="login-form">
         <h1>Login</h1>
 
         <div class="txtb">
@@ -41,17 +41,39 @@
         </div>
 
     </form>
-
-    <script type="text/javascript">
-        $(".txtb input").on("focus",function(){
-            $(this).addClass("focus");
-        });
-
-        $(".txtb input").on("blur",function(){
-            if($(this).val() == "")
-            $(this).removeClass("focus");
-        })
-    </script>
+    -->
+    
+  <div class="content" id="Content_1"><h1>1</h1></div>
+	<div class="content" id="Content_2"><h1>2</h1></div>
+	<div class="content" id="Content_3"><h1>3</h1></div>
+	<div class="content" id="Content_4"><h1>4</h1></div>
+	<div class="content" id="Content_5"><h1>5</h1></div>
+	<div class="content" id="Content_6"><h1>6</h1></div>
+	<div class="content" id="Content_7"><h1>7</h1></div>
+  
+	<script type="text/javascript">
+        window.addEventListener("wheel", function(e){
+		e.preventDefault();
+		},{passive : false});
+		
+		var $html = $("html"); 
+		var page = 1;
+		var lastPage = $(".content").length;
+		$html.animate({scrollTop:0},10);
+		
+		$(window).on("wheel", function(e){
+		if($html.is(":animated")) return; 
+		if(e.originalEvent.deltaY > 0){
+			if(page== lastPage) return;
+				page++;
+		}else if(e.originalEvent.deltaY < 0){
+			if(page == 1) return;
+			page--;
+		}
+		var posTop = (page-1) * $(window).height(); 
+		$html.animate({scrollTop : posTop});
+		});
+	</script>
   
 </body>
 </html>
