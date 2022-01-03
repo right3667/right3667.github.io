@@ -32,6 +32,8 @@ html{overflow: hidden;}
 #content_2{
 	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
 	background-attachment:fixed;
+	
+	
 }
 
 #content_3{
@@ -178,34 +180,45 @@ a {
 	left: 5%;
 }
 
+.main_head_2{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	color: #fff;
+	font-size: 0.9em;
+	letter-spacing: -1px;
+}
+
 #container > h1 {
   text-align: center;
   color: #fff;
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 2px;
-  font-family: 'Press Start 2P';
-  font-weight: 400;
+  /*font-family: 'Press Start 2P';*/
+  font-weight: 550;
   /*Create overlap*/
-  
   margin: 0;
   line-height: 0;
   /*Animation*/
-  
+  letter-spacing: -1px;
   animation: glitch1 2.5s infinite;
+  position: fixed;
 }
-
+/*
 #container > h1:nth-child(2) {
   color: #67f3da;
   animation: glitch2 2.5s infinite;
   font-weight: bold;
+  letter-spacing: -1px;
 }
 
 #container > h1:nth-child(3) {
   color: #f16f6f;
   animation: glitch3 2.5s infinite;
   font-weight: bold;
-}
+  letter-spacing: -1px;
+}*/
 /*Keyframes*/
 
 @keyframes glitch1 {
@@ -372,3 +385,53 @@ a {
     opacity: 0.25;
   }
 }
+
+
+.intro {
+	font-weight: lighter;
+	font-size: 0.5em;
+	color: #fff;
+	transform: translate(6%,420%);
+}
+
+.intro2 {
+	font-weight: lighter;
+	color: #fff;
+	transform: translate(6%,85%);
+	letter-spacing: -1px;
+	
+}
+
+
+#intro_2 > h1 {
+	font-size: 1.8em;
+	text-decoration: underline;
+}
+#intro_2 > h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+#intro_2 > h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
