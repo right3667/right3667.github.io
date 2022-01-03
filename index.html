@@ -15,30 +15,35 @@
   <meta property="og:description" content="LEO's portfolio"/>
   
   
-  <link rel="stylesheet" href="https://right3667.github.io/assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   
   <link rel="shortcut icon" type="image/x-icon" href="https://right3667.github.io/L.png">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
-  <meta property="og:image" content="https://right3667.github.io/assets/img/avatar3.jpg"/>
+  <meta property="og:image" content="https://right3667.github.io/assets/img/avatar.jpg"/>
   
 </head>
 
 
-<body>
-   
 
-	<div class="content" id="content_1">
-		<div class="main_head" id="head_name"/>
+
+<body>
+   <header/>
+		<div class="main_head" id="head_name">
 			<div class="glitch" id="container">
 				<h1>LEO</h1>
 				<h1>LEO</h1>
 				<h1>LEO</h1>
 			</div>
 		</div>
+	</header>
+	
+	
+	<div class="content" id="content_1" name="h1ss">
+
 		<div class="gradient-border" id="box">
-			<image src="assets\img\avatar3.jpg" alt="LEO's profile pic" id="imgAvatar"/>
+			<image src="https://right3667.github.io/assets/img/avatar3.jpg" alt="LEO's profile pic" id="imgAvatar"/>
 		</div>
 		<div class="firstSection_nameContainer" id="nameContainer">
 			LEO E. KIM
@@ -52,12 +57,55 @@
             <span class="ball"></span>
         </div>
 	</div>
-	<div class="content" id="content_2"><h1>2.2</h1></div>
-	<div class="content" id="content_3"><h1>3</h1></div>
-	<div class="content" id="content_4"><h1>4</h1></div>
-	<div class="content" id="content_5"><h1>5</h1></div>
-	<div class="content" id="content_6"><h1>6</h1></div>
-	<div class="content" id="content_7"><h1>7</h1><h2>8</h2></div>
+	
+	<div class="content" id="content_2">
+		<div class="intro" id="intro_1">
+			<h1>컴퓨터공학을 전공하였고, 프로그램의 동작을 이해 할 수 있는 QA입니다.<br><br>
+				언젠가 인류 발전에 기여하는 솔루션을 만드는 것이 목표입니다.<br><br>
+				이를 위해 꾸준한 QA가 되려 노력하고 있습니다.<br>
+			</h1>
+		</div>
+	</div>
+	<div class="content" id="content_3">
+		<div class="intro2" id="intro_2">
+			<br>
+			<h1>한글과컴퓨터</h1>
+			<h2>QA</h2>
+			<h3>2020 - 2021</h3><br>
+			
+		</div>
+	</div>
+	<div class="content" id="content_4">
+		<div class="intro2" id="intro_2">
+			<br>
+			<h1>잉카인터넷</h1>
+			<h2>QA</h2>
+			<h3>2020 - 2021</h3><br>
+		</div>
+	</div>
+	<div class="content" id="content_5">
+		<div class="intro2" id="intro_2">
+			<br>
+			<h1>에스지앤</h1>
+			<h2>QA</h2>
+			<h3>2020 - 2021</h3><br>
+			
+		</div>
+	</div>
+	<div class="content" id="content_6">
+		<div class="intro2" id="intro_2">
+			<br>
+			<h1>모바일 앱 개발</h1>
+			<h2>QA</h2>
+			<h3>2020 - 2021</h3><br>
+			
+		</div>
+	</div>
+	<div class="content" id="content_7">
+		
+		<div style="cursor:pointer;" onclick="window.scrollTo(0,0); page = 1;">TOP</div>
+				
+	</div>
 	
 	<script type="text/javascript">
         window.addEventListener("wheel", function(e){
@@ -81,7 +129,14 @@
 		var posTop = (page-1) * $(window).height(); 
 		$html.animate({scrollTop : posTop});
 		});
+		
+		$("#goto_top").click(function () {
+		var position = $("#window1").offset();
+		$("body").stop().animate({scrollTop:position.top},500);
+		});  //offset 해당 객체의 위치값을 받아오는 것
+		
 	</script>
-  
+	
+	
 </body>
 </html>
