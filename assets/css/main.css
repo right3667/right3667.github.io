@@ -32,8 +32,6 @@ html{overflow: hidden;}
 #content_2{
 	background: linear-gradient(to right top, #3b9fd7, #1b95de, #008ae3, #197de5, #3b6ee4, #5166e4, #665ee3, #7953e0, #8a50e2, #9a4ce4, #aa47e5, #ba41e5);
 	background-attachment:fixed;
-	
-	
 }
 
 #content_3{
@@ -63,14 +61,13 @@ html{overflow: hidden;}
 
 
 
-#content_7 > h2{
+.go_top{
 	position: absolute;
-	top: 50%; left: 50%;
+	top: 90%; left: 50%;
 	transform: translate(-50%,-50%);
-	font-size: 5em;
-	font-weight: bold;
-	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-	
+	font-size: 1em;
+
+	color: #fff;
 }
 
 a {
@@ -99,8 +96,8 @@ a {
 
 .gradient-border {
 	position: absolute;
-	width: 155px;
-	height: 155px; 
+	width: 160px;
+	height: 160px; 
 	--borderWidth: 3px;
 	bottom: 38%; left: 50%;
 	transform: translate(-50%,-50%);
@@ -148,14 +145,14 @@ a {
 }
 
 #imgAvatar {
-	width: 155px;
-	height: 155px; 	
+	width: 160px;
+	height: 160px; 	
 	border-radius: 70%;
 }
 
 .firstSection_nameContainer{
 	position: absolute;
-	bottom: 37%; left: 50%;
+	bottom: 38%; left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 2em;
 	font-weight: bold;
@@ -166,7 +163,7 @@ a {
 .firstSection_positionContainer{
 	position: absolute;
 	margin-top: 15px;
-	bottom: 34%; left: 50%;
+	bottom: 35%; left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 1em;
 	color: #fff;
@@ -191,6 +188,7 @@ a {
 
 #container > h1 {
   text-align: center;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   color: #fff;
   font-size: 2em;
   font-weight: bold;
@@ -212,7 +210,6 @@ a {
   font-weight: bold;
   letter-spacing: -1px;
 }
-
 #container > h1:nth-child(3) {
   color: #f16f6f;
   animation: glitch3 2.5s infinite;
@@ -387,18 +384,26 @@ a {
 }
 
 
+
 .intro {
-	font-weight: lighter;
-	font-size: 0.5em;
+	position: absolute;
+	margin-top: 15px;
+	position: absolute;
+	top: 43%;
+	left: 5%;
+	font-size: 0.9em;
 	color: #fff;
-	transform: translate(6%,420%);
+	letter-spacing: 2px;
 }
+
 
 .intro2 {
 	font-weight: lighter;
 	color: #fff;
-	transform: translate(6%,85%);
 	letter-spacing: -1px;
+	position: absolute;
+	top: 20%;
+	left: 5%;
 	
 }
 
@@ -420,18 +425,18 @@ a {
 	font-weight: 100;
 }
 
+#intro_2 > h4 {
+	margin-top: 10px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 0.9em;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.test1{
+	transform: translate(15px);
+	font-size: 0.9em;
+	letter-spacing: 2px;
+	margin-top: 15px;
+	line-height: 200%;
+}
