@@ -170,6 +170,16 @@ a {
 	letter-spacing: 5px;
 }
 
+.firstSection_mailContainer{
+	position: absolute;
+	margin-top: 15px;
+	bottom: 32%; left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1em;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
 
 .main_head{
 	position: absolute;
