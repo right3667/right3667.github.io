@@ -173,7 +173,7 @@ a {
 .firstSection_mailContainer{
 	position: absolute;
 	margin-top: 15px;
-	bottom: 30%; left: 50%;
+	bottom: 31%; left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 1em;
 	color: #fff;
