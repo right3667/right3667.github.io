@@ -442,7 +442,10 @@ a {
 	letter-spacing: 2px;
 	font-size: 0.9em;
 }
-
+#intro_2 > h5 {
+	font-size: 1.8em;
+	float: left;
+}
 
 .test1{
 	transform: translate(15px);
