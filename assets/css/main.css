@@ -419,6 +419,7 @@ a {
 
 
 #intro_2 > h1 {
+	float: left;
 	font-size: 1.8em;
 	text-decoration: underline;
 }
