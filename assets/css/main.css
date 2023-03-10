@@ -417,15 +417,27 @@ a {
 	
 }
 
+a:link {
+	color : #fff;
+}
+
+a:visited {
+	color : #fff;
+}
+
+a:hover {
+	color : red;
+}
+
+a:active {
+	color : green;
+}
+
 
 #intro_2 > h1 {
 	font-size: 1.8em;
 	text-decoration: underline;
 	float: left;
-	color: #fff;
-	link : #fff;
-	alink : #fff;
-	vlink : #fff;
 }
 #intro_2 > h2 {
 	font-size: 1.8em;
