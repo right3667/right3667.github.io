@@ -426,11 +426,11 @@ a:visited {
 }
 
 a:hover {
-	color : gray;
+	color : #ced4da;
 }
 
 a:active {
-	color : teal;
+	color : gray;
 }
 
 
